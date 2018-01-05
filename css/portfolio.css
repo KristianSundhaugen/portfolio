@@ -219,6 +219,7 @@
 
 	.portfolio-item {
 		margin-bottom: 30px;
+		position: relative;
 
 	}
 
@@ -245,9 +246,9 @@
 		padding: 15px 20px;
 	}
 
-	.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+	.center-text {
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
 	}
