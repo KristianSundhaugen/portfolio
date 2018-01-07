@@ -61,7 +61,7 @@
 	<!-- About -->
 	<section id="about" class="about">
 		<dir class="container text-center">
-			<h2>Developing an online Ludo game</h2>
+			<h2>Developing an client/server version of the board game Ludo</h2>
 			<p class="lead">My first encounter with Java</p>
 		</dir>
 		<!--/.container-->
@@ -77,15 +77,51 @@
 					<div class="row text-left">
 						<ul>
 							<li><h4>The Project Assignment<h4></li>
-								<p> The assignment was to develop a website, where users could upload videos, make playlists and add videos to them. With the posibility for users to dynamically make subtitles for videos. The application needed also to have a login/register user function, where information would be stored securily in a database. Also with the posibility to have adminusers added, that has the power to delete any video or ban users. The biggest task for us was to make the whole application single page. This was done through ajax and jQuery.</p>
-							<li><h4>HTML<h4></li>
-								<p>To-Do</p>
-							<li><h4>php/database?<h4></li>
-								<p>To-Do</p>
-							<li><h4>ajax/jQuery?<h4></li>
-								<p>To-Do</p>
-							<li><h4>javaScript<h4></li>
-								<p>To-Do</p>
+								<p>
+									The assignment was to make an client/server version of the board game Ludo. Where users could start games between friends or random users.
+									There would also be a chat function between users. The application needed to have permanent storage of user data(games, userinfo, passwords, ets...).
+									Log all chat activity between users. The possibilities for users to request random games. Play the game of course.
+									Getting automatically logged in when starting client. Possibility to change the profile info. Be part of multiple chatrooms. And finally have users games logged,
+									so if they leave during, they can rejoin later. Making it so an user can partake in multiple games at once.
+								</p>
+							<li><h4>Our work<h4></li>
+								<p>
+									So we developed a game with the original ludo rules. Making it so up to four players could join a game(minimum 2).A
+									Any user can at any point join a optional amount of games, but will be kicked if not partaking in a certain time.
+									The players could chat between themselves, our join other chatrooms outside the specific game.
+								</p>
+								<p>
+									Our server keeps order over active games and channels with which users that are connected to these. And if all users leave an game or channel
+									it deletes itself from server.
+								</p>
+								<p>
+									A game can be started in two ways.
+									<ul>
+										<li>
+											A player would challenge another player. Sending an message to them. Then adding which players that he want's to partake.
+											The player receives a challenge, and has a certain time to respond to this. The game starts either when all players has responded,
+											or the time for accepting has run out.
+										</li>
+										<li>
+											The other way a user can join a game is to choose to join an random game. Players that choose this will be added to a queue with up to four players.
+											So as soon there is four players in the queue the game will start with those four players.
+										</li>
+									</ul>
+								</p>
+								<p>
+									A game continues until there is a winner, or the game has been at a standstill for too long. A game is won when all pieces are in the goal area.
+									We made it so that there is statistics over which user has won most games and which user has partaken in the most games.
+								</p>
+								<p>
+									The user interface is built with javaFX and the application is made to have I18N, so the language used for your desktop is what the ingame text will be set at.
+								</p>
+							<li><h4>What I learnt<h4></li>
+								<p>
+									This was my first introduction to working with Java on a big scale. I have worked with backend before, through C++ and such my first two years, but this was definitely
+									an application on a much bigger scale than I was used to. The information handling between client/server was a hugh steppingstone. Took a hell of a lot of time to understand,
+									but in the end got what we wanted. Other than that I found I liked to work with the javaFx, but I think that jus might be because I have a love for any Front-End work.
+									The feeling of seeing what I am developing makes it som much more rewarding.
+								</p>
 						</ul>
 							</div>
 						</div>
@@ -109,7 +145,7 @@
 					<div>
 					<p class="lead">If interested, the sourcecode of the project is open for viewing.</p>
 					<br>
-					<a href="#about" class="btn btn-dark btn-lg js-scroll-trigger">Link to code in GitHub</a>
+					<a href="https://github.com/KristianSundhaugen/Java-Project" class="btn btn-dark btn-lg js-scroll-trigger">Link to code in GitHub</a>
 					<br>
 					<p class="lead">Or</p>
 					<a href="index.html" class="btn btn-dark btn-lg js-scroll-trigger">Back to portfolio</a>

@@ -77,15 +77,43 @@
 					<div class="row text-left">
 						<ul>
 							<li><h4>The Project Assignment<h4></li>
-								<p> The assignment was to develop a website, where users could upload videos, make playlists and add videos to them. With the posibility for users to dynamically make subtitles for videos. The application needed also to have a login/register user function, where information would be stored securily in a database. Also with the posibility to have adminusers added, that has the power to delete any video or ban users. The biggest task for us was to make the whole application single page. This was done through ajax and jQuery.</p>
-							<li><h4>HTML<h4></li>
-								<p>One of our main focuses for this application was to build an single page application, with focus on object oriented code. Our application was built on the idea to have a main page where all the content appered. This would apper dynamicly through a hashvalue change.</p>
-							<li><h4>php/database?<h4></li>
-								<p>To-Do</p>
-							<li><h4>ajax/jQuery?<h4></li>
-								<p>To-Do</p>
-							<li><h4>javaScript<h4></li>
-								<p>To-Do</p>
+								<p>
+									The assignment was to develop a website, where users could upload videos, make playlist's and add videos to them.
+									With the possibility for users to dynamically make subtitles for videos.
+									The application needed also to have a login/register user function, where information would be stored securely in a database.
+									Also with the possibility to have admin-users added, that has the power to delete any video or ban users.
+									The biggest task for us was to make the whole application single page. This was done through jquery ajax.
+								</p>
+							<li><h4>Our work<h4></li>
+								<p>
+									One of our main focuses for this application was to build an single page application, with focus on object oriented code.
+									Our application was built on the idea to have a main page where all the content appeared.
+									This was done through the use of jquery ajax, it was a requirement that we used jquery ajax for this project,
+									otherwise we were looking at react and angular as possibilities.
+								</p>
+								<p>
+									We have a db_class that takes all requests towards the database, this can be for example a video, username, subtitles for a video or passwords.
+									Passwords was of course handled properly through hashing. So the cooperation that makes the dataflow of content work, is that
+									we have an html index file, where all the content ends up dynamically through a hashvalue change.
+									Every html file, exept from index has a URL with an unique hashvalue. This is so we can call the content we want.
+									Every html file has a cooperation with an script and an php file, that has their specific needed functions, used
+									depending on what they need. This is then connected to database, where all of the variables stored from script and php, then receives the values
+									fitting to the request needed towards the database.
+								</p>
+								<p>
+									Videos where to be shown listed down the page. With the possibility to add them to your own playlist's. Other than that there was a function to add
+									subtitles to your own videos. This was done through making an new text file, and dynamically adding components to this file, starting with a WebVTT.
+									Then setting the start point for the caption where the user paused the video, letting them type a text in an field, then adding a 2 second's to the stop of the subtitle. This would then be sent to the
+									database, where the id of the video was connected to the specific subtitle file. The user could also give the subtitles different languages, making the same video have multiple
+									choices of subtitles. This was mainly done through javascripting.
+								</p>
+							<li><h4>What I learnt<h4></li>
+								<p>
+									I got an great introduction to jquery ajax, even though I would rather use something like react or angular, getting an basic knowledge of how jquery works is great.
+									I also got good practice in javascriping, css and html and object-oriented code development. This project was what really caught my eye for Front-End development.
+									I finally found a passion for an development style, but unfortunately got a very short time working with it in school. Making my knowledge basic, but the eagerness to learn more is great.
+
+								</p>
 						</ul>
 							</div>
 						</div>
@@ -109,7 +137,7 @@
 					<div>
 					<p class="lead">If interested, the sourcecode of the project is open for viewing.</p>
 					<br>
-					<a href="#about" class="btn btn-dark btn-lg js-scroll-trigger">Link to code in GitHub</a>
+					<a href="https://github.com/KristianSundhaugen/WWW-Project" class="btn btn-dark btn-lg js-scroll-trigger">Link to code in GitHub</a>
 					<br>
 					<p class="lead">Or</p>
 					<a href="index.html" class="btn btn-dark btn-lg js-scroll-trigger">Back to portfolio</a>
